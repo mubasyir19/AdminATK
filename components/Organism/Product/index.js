@@ -61,7 +61,7 @@ export default function Product() {
               <div class='col-md-12 grid-margin stretch-card'>
                 <div class='card'>
                   <div class='card-body'>
-                    <Link className='btn btn-primary rounded' href='/product/tambah'>
+                    <Link className='btn btn-primary rounded' href='/product/add'>
                       Add Product
                     </Link>
                     {/* <h4 class='card-title'>Striped Table</h4> */}
