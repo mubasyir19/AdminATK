@@ -6,8 +6,15 @@ export default function Sidebar() {
   const router = useRouter();
 
   const isLinkActive = (href) => {
-    return router.pathname === href ? 'active' : '';
+    const currentPath = router.pathname;
+
+    if (currentPath === href || currentPath.startsWith(`${href}/`)) {
+      return 'active';
+    }
+    return;
+    // return router.pathname === href ? 'active' : '';
   };
+
   return (
     <nav className='sidebar sidebar-offcanvas' id='sidebar'>
       <ul className='nav'>
