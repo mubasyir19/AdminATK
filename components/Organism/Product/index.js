@@ -41,10 +41,8 @@ export default function Product() {
               <div className='col-md-12 grid-margin'>
                 <div className='row'>
                   <div className='col-12 col-xl-8 mb-4 mb-xl-0'>
-                    <h3 className='font-weight-bold'>Manage Your Products</h3>
-                    <h6 className='font-weight-normal mb-0'>
-                      All systems are running smoothly! You have <span className='text-primary'>3 unread alerts!</span>
-                    </h6>
+                    <h3 className='font-weight-bold'>Products Page</h3>
+                    <h6 className='font-weight-normal mb-0'>Manage Your Products!</h6>
                   </div>
                   <div className='col-12 col-xl-4'>
                     <div className='justify-content-end d-flex'>
@@ -54,32 +52,6 @@ export default function Product() {
                         </li>
                         <li className='breadcrumb-item active'>Product</li>
                       </ol>
-                      {/* <div className='dropdown flex-md-grow-1 flex-xl-grow-0'>
-                        <button
-                          className='btn btn-sm btn-light bg-white dropdown-toggle'
-                          type='button'
-                          id='dropdownMenuDate2'
-                          data-toggle='dropdown'
-                          aria-haspopup='true'
-                          aria-expanded='true'
-                        >
-                          <i className='mdi mdi-calendar'></i> Today (10 Jan 2021)
-                        </button>
-                        <div className='dropdown-menu dropdown-menu-right' aria-labelledby='dropdownMenuDate2'>
-                          <a className='dropdown-item' href='#'>
-                            January - March
-                          </a>
-                          <a className='dropdown-item' href='#'>
-                            March - June
-                          </a>
-                          <a className='dropdown-item' href='#'>
-                            June - August
-                          </a>
-                          <a className='dropdown-item' href='#'>
-                            August - November
-                          </a>
-                        </div>
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -89,7 +61,7 @@ export default function Product() {
               <div class='col-md-12 grid-margin stretch-card'>
                 <div class='card'>
                   <div class='card-body'>
-                    <Link className='btn btn-primary rounded' href='#'>
+                    <Link className='btn btn-primary rounded' href='/product/tambah'>
                       Add Product
                     </Link>
                     {/* <h4 class='card-title'>Striped Table</h4> */}
@@ -100,33 +72,27 @@ export default function Product() {
                       <table class='table table-striped'>
                         <thead>
                           <tr>
-                            <th>User</th>
-                            <th>First name</th>
-                            <th>Progress</th>
-                            <th>Amount</th>
-                            <th>Deadline</th>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
+                            <th>Action</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td class='py-1'>
-                              <img src='/images/faces/face1.jpg' alt='image' />
-                            </td>
+                            <td>1</td>
                             <td>Herman Beck</td>
-                            <td>
-                              {/* <div class='progress'>
-                                <div
-                                  class='progress-bar bg-success'
-                                  role='progressbar'
-                                  style='width: 25%'
-                                  aria-valuenow='25'
-                                  aria-valuemin='0'
-                                  aria-valuemax='100'
-                                ></div>
-                              </div> */}
+                            <td>Rp. 12.000</td>
+                            <td>150</td>
+                            <td className=''>
+                              <Link className='btn btn-sm btn-info rounded' href='#'>
+                                <i className='ti-pencil'></i>
+                              </Link>
+                              <Link className='btn btn-sm btn-danger rounded ml-2' href='#'>
+                                <i className='ti-trash'></i>
+                              </Link>
                             </td>
-                            <td>$ 77.99</td>
-                            <td>May 15, 2015</td>
                           </tr>
                         </tbody>
                       </table>
