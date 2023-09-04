@@ -12,6 +12,8 @@ export default function App({ Component, pageProps }) {
         <link rel='stylesheet' href='/vendors/ti-icons/css/themify-icons.css' />
         <link rel='stylesheet' type='text/css' href='/js/select.dataTables.min.css' />
         <link rel='stylesheet' href='/css/vertical-layout-light/style.css' />
+        <link rel='stylesheet' href='/vendors/select2/select2.min.css' />
+        <link rel='stylesheet' href='/vendors/select2-bootstrap-theme/select2-bootstrap.min.css' />
         <link rel='shortcut icon' href='/images/favicon.png' />
         <script src='/vendors/js/vendor.bundle.base.js'></script>
         <script src='/vendors/chart.js/Chart.min.js'></script>
@@ -25,6 +27,11 @@ export default function App({ Component, pageProps }) {
         <script src='/js/todolist.js'></script>
         <script src='/js/dashboard.js'></script>
         <script src='/js/Chart.roundedBarCharts.js'></script>
+        <script src='/vendors/typeahead.js/typeahead.bundle.min.js'></script>
+        <script src='/vendors/select2/select2.min.js'></script>
+        <script src='/js/file-upload.js'></script>
+        <script src='/js/typeahead.js'></script>
+        <script src='/js/select2.js'></script>
       </Head>
       <Component {...pageProps} />
     </>
