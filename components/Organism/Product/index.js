@@ -86,7 +86,7 @@ export default function Product() {
                             <td>Rp. 12.000</td>
                             <td>150</td>
                             <td className=''>
-                              <Link className='btn btn-sm btn-info rounded' href='#'>
+                              <Link className='btn btn-sm btn-info rounded' href='/product/edit'>
                                 <i className='ti-pencil'></i>
                               </Link>
                               <Link className='btn btn-sm btn-danger rounded ml-2' href='#'>

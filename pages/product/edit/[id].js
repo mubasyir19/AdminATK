@@ -2,9 +2,12 @@ import Footer from '@/components/Molecules/Footer';
 import Navbar from '@/components/Molecules/Navbar';
 import Sidebar from '@/components/Molecules/Sidebar';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 export default function Edit() {
+  const router = useRouter();
+  const { id } = router.query;
   return (
     <div className='container-scroller'>
       <Navbar />
@@ -137,7 +140,7 @@ export default function Edit() {
                           </span>
                         </div>
                       </div>
-                      <button type='submit' className='btn btn-primary mr-2' onClick={handleSubmit}>
+                      <button type='submit' className='btn btn-primary mr-2'>
                         Submit
                       </button>
                       <button className='btn btn-light'>Cancel</button>
