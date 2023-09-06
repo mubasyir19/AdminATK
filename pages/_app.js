@@ -1,5 +1,6 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
+import Script from 'next/script';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -15,7 +16,7 @@ export default function App({ Component, pageProps }) {
         <link rel='stylesheet' href='/vendors/select2/select2.min.css' />
         <link rel='stylesheet' href='/vendors/select2-bootstrap-theme/select2-bootstrap.min.css' />
         <link rel='shortcut icon' href='/images/favicon.png' />
-        <script src='/vendors/js/vendor.bundle.base.js'></script>
+        {/* <script src='/vendors/js/vendor.bundle.base.js'></script>
         <script src='/vendors/chart.js/Chart.min.js'></script>
         <script src='/vendors/datatables.net/jquery.dataTables.js'></script>
         <script src='/vendors/datatables.net-bs4/dataTables.bootstrap4.js'></script>
@@ -31,9 +32,25 @@ export default function App({ Component, pageProps }) {
         <script src='/vendors/select2/select2.min.js'></script>
         <script src='/js/file-upload.js'></script>
         <script src='/js/typeahead.js'></script>
-        <script src='/js/select2.js'></script>
+        <script src='/js/select2.js'></script> */}
       </Head>
       <Component {...pageProps} />
+      <Script src='/vendors/js/vendor.bundle.base.js' />
+      <Script src='/vendors/chart.js/Chart.min.js' />
+      <Script src='/vendors/datatables.net-bs4/dataTables.bootstrap4.js' />
+      <Script src='/js/dataTables.select.min.js' />
+      <Script src='/js/off-canvas.js' />
+      <Script src='/js/hoverable-collapse.js' />
+      <Script src='/js/template.js' />
+      <Script src='/js/settings.js' />
+      <Script src='/js/todolist.js' />
+      <Script src='/js/dashboard.js' />
+      <Script src='/js/Chart.roundedBarCharts.js' />
+      <Script src='/vendors/typeahead.js/typeahead.bundle.min.js' />
+      <Script src='/vendors/select2/select2.min.js' />
+      <Script src='/js/file-upload.js' />
+      <Script src='/js/typeahead.js' />
+      <Script src='/js/select2.js' />
     </>
   );
 }
