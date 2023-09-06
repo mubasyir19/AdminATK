@@ -58,18 +58,18 @@ export default function Product() {
               </div>
             </div>
             <div className='row'>
-              <div class='col-md-12 grid-margin stretch-card'>
-                <div class='card'>
-                  <div class='card-body'>
+              <div className='col-md-12 grid-margin stretch-card'>
+                <div className='card'>
+                  <div className='card-body'>
                     <Link className='btn btn-primary rounded' href='/product/add'>
                       Add Product
                     </Link>
-                    {/* <h4 class='card-title'>Striped Table</h4> */}
-                    {/* <p class='card-description'>
+                    {/* <h4 className='card-title'>Striped Table</h4> */}
+                    {/* <p className='card-description'>
                       Add class <code>.table-striped</code>
                     </p> */}
-                    <div class='table-responsive'>
-                      <table class='table table-striped'>
+                    <div className='table-responsive'>
+                      <table className='table table-striped'>
                         <thead>
                           <tr>
                             <th>No</th>

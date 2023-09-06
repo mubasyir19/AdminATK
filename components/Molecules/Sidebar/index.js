@@ -26,7 +26,7 @@ export default function Sidebar() {
         </li>
         <li className={`nav-item ${isLinkActive('/product')}`}>
           <Link className='nav-link' href='/product'>
-            <i class='ti-menu-alt menu-icon'></i>
+            <i className='ti-menu-alt menu-icon'></i>
             <span className='menu-title'>Product</span>
           </Link>
         </li>
