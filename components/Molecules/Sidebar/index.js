@@ -24,6 +24,12 @@ export default function Sidebar() {
             <span className='menu-title'>Dashboard</span>
           </Link>
         </li>
+        <li className={`nav-item ${isLinkActive('/listAcc')}`}>
+          <Link className='nav-link' href='/listAcc'>
+            <i className='icon-grid menu-icon'></i>
+            <span className='menu-title'>List Account</span>
+          </Link>
+        </li>
         <li className={`nav-item ${isLinkActive('/product')}`}>
           <Link className='nav-link' href='/product'>
             <i className='ti-menu-alt menu-icon'></i>
